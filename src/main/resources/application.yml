@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: translator-api
+  data:
+    mongodb: 127.0.0.1
+    host: 27017
+    database: translator
