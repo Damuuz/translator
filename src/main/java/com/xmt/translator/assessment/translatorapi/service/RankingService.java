@@ -21,4 +21,8 @@ public class RankingService {
         //Sort sort = new Sort(Sort.Direction.DESC);
         return rankingRepository.findAll();
     }
+
+    public Ranking getOne(String word) {
+        return rankingRepository.findByWord(word);
+    }
 }

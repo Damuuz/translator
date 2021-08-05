@@ -59,7 +59,7 @@ public class TranslatorService {
                 }
             }
             ranking.setWord(word);
-            int rank = ranking.getRanking() + 1;
+            int rank = rankingService.getOne(word).getRanking() + 1;
             ranking.setRanking(rank);
             rankingService.create(ranking);
         }
